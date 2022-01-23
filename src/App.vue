@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
-    <a v-for="작명 in 4" :key="작명">Home</a>
-    
+    <a v-for="작명 in 메뉴들" :key="작명">{{작명}}</a>
+
   </div>
 
   <img alt="Vue logo" src="./assets/logo.png">
@@ -25,8 +25,7 @@ export default {
   name: 'App',
   data(){
     return{
-      price1 : 80,
-      price2 : 70,
+      메뉴들 : ['Home', 'Shop' ,'About'],
       products : ['역삼동원룸','천호동원룸','마포구원룸']
     }
   },
