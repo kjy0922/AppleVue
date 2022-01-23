@@ -1,8 +1,7 @@
 <template>
   <div class="menu">
-    <a>Home</a>
-    <a>Products</a>
-    <a>About</a>
+    <a v-for="작명 in 4" :key="작명">Home</a>
+    
   </div>
 
   <img alt="Vue logo" src="./assets/logo.png">
