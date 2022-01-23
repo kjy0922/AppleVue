@@ -1,10 +1,8 @@
 <template>
   <div class="menu">
-    <a v-for="작명 in 메뉴들" :key="작명">{{작명}}</a>
-
+    <a v-for="a in 메뉴들" :key="a">{{ a }}</a>
   </div>
 
-  <img alt="Vue logo" src="./assets/logo.png">
   <div>
     <h4>{{products[0]}}</h4>
     <p>50만원</p>
@@ -41,7 +39,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 .menu {
   background: darkslateblue;
