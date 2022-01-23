@@ -3,17 +3,9 @@
     <a v-for="a in 메뉴들" :key="a">{{ a }}</a>
   </div>
 
-  <div>
-    <h4>{{products[0]}}</h4>
+  <div v-for="(a,i) in products" :key="i">
+    <h4>{{ a }}</h4>
     <p>50만원</p>
-  </div>
-  <div>
-    <h4>{{products[1]}}</h4>
-    <p>60만원</p>
-  </div>
-  <div>
-    <h4>{{products[2]}}</h4>
-    <p>70만원</p>
   </div>
 </template>
 
